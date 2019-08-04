@@ -1,0 +1,15 @@
+<div class="row">
+<h2>Fotos</h2>
+<ul id="Thumbnaislist">
+<li *ngFor="let image of images | async" class="img">
+
+<a [routerLink]="['/image', image.$key]">
+
+<img src="{{image.url}}" class="tn">
+</a>
+
+</li>
+</ul>
+
+
+</div>
